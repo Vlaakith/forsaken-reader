@@ -1,0 +1,39 @@
+{
+  "id": "spectre",
+  "title": "The Spectre's Game",
+  "icon": "🎭",
+  "paragraphs": [
+    [
+      { "text": "There", "ru": "Там", "ex": "There is a cat — Там есть кот" },
+      { "text": "is", "ru": "это, является", "ex": "It is dark — Это тёмное" },
+      { "text": "a" },
+      { "text": "dark", "ru": "тёмный", "ex": "Dark night — Тёмная ночь" },
+      { "text": "place", "ru": "место", "ex": "A scary place — Страшное место" },
+      { "text": "." },
+      { "text": "The Spectre" },
+      { "text": "lives", "ru": "живёт", "ex": "He lives here — Он живёт тут" },
+      { "text": "here", "ru": "здесь", "ex": "Come here — Иди сюда" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "watches", "ru": "наблюдает", "ex": "I watch TV — Я смотрю ТВ" },
+      { "text": "everything", "ru": "всё", "ex": "I know everything — Я знаю всё" },
+      { "text": "." }
+    ],
+    [
+      { "text": "The Spectre" },
+      { "text": "likes", "ru": "любит", "ex": "I like games — Я люблю игры" },
+      { "text": "games", "ru": "игры", "ex": "Video games — Видеоигры" },
+      { "text": "." },
+      { "text": "But his games are" },
+      { "text": "scary", "ru": "страшные", "ex": "Scary monster — Страшный монстр" },
+      { "text": "." },
+      { "text": "People", "ru": "Люди", "ex": "Many people — Много людей" },
+      { "text": "must", "ru": "должны", "ex": "You must run — Ты должен бежать" },
+      { "text": "run", "ru": "бежать", "ex": "Run fast! — Беги быстро!" },
+      { "text": "." },
+      { "text": "Or", "ru": "Или", "ex": "Yes or no — Да или нет" },
+      { "text": "die", "ru": "умереть", "ex": "Don't die — Не умри" },
+      { "text": "." }
+    ]
+  ]
+}

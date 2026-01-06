@@ -1,0 +1,39 @@
+{
+  "id": "elliot",
+  "title": "Elliot",
+  "icon": "🍕",
+  "paragraphs": [
+    [
+      { "text": "Elliot is a" },
+      { "text": "pizza delivery", "ru": "доставщик пиццы", "ex": "Pizza delivery — Доставка пиццы" },
+      { "text": "boy", "ru": "парень, мальчик", "ex": "A young boy — Молодой парень" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "worked", "ru": "работал", "ex": "I worked hard — Я много работал" },
+      { "text": "at Builder Brothers Pizza." },
+      { "text": "He is" },
+      { "text": "good", "ru": "добрый, хороший", "ex": "A good person — Хороший человек" },
+      { "text": "." },
+      { "text": "He is" },
+      { "text": "brave", "ru": "храбрый, смелый", "ex": "Be brave — Будь храбрым" },
+      { "text": "." }
+    ],
+    [
+      { "text": "C00lkidd" },
+      { "text": "destroyed", "ru": "разрушал", "ex": "The fire destroyed the house — Огонь разрушил дом" },
+      { "text": "his" },
+      { "text": "work", "ru": "работа, рабочее место", "ex": "I love my work — Я люблю свою работу" },
+      { "text": "many", "ru": "много", "ex": "Many times — Много раз" },
+      { "text": "times", "ru": "раз, времена", "ex": "One more time — Ещё один раз" },
+      { "text": "." },
+      { "text": "Now", "ru": "Сейчас, Теперь", "ex": "Now I'm angry — Теперь я злой" },
+      { "text": "Elliot is" },
+      { "text": "angry", "ru": "злой, сердитый", "ex": "Don't be angry — Не злись" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "wants", "ru": "хочет", "ex": "I want revenge — Я хочу мести" },
+      { "text": "revenge", "ru": "месть", "ex": "Sweet revenge — Сладкая месть" },
+      { "text": "." }
+    ]
+  ]
+}

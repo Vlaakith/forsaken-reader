@@ -1,0 +1,47 @@
+{
+  "id": "shedletsky",
+  "title": "1x1x1x1 and Shedletsky",
+  "icon": "⚔️",
+  "paragraphs": [
+    [
+      { "text": "Shedletsky has a" },
+      { "text": "dark", "ru": "тёмный", "ex": "Dark secret — Тёмный секрет" },
+      { "text": "secret", "ru": "секрет", "ex": "Keep a secret — Хранить секрет" },
+      { "text": "." },
+      { "text": "His" },
+      { "text": "hatred", "ru": "ненависть", "ex": "Full of hatred — Полон ненависти" },
+      { "text": "became", "ru": "стала", "ex": "She became strong — Она стала сильной" },
+      { "text": "alive", "ru": "живой", "ex": "Stay alive — Оставайся живым" },
+      { "text": "." },
+      { "text": "It" },
+      { "text": "turned", "ru": "превратилось", "ex": "Water turned to ice — Вода превратилась в лёд" },
+      { "text": "into", "ru": "в, внутрь", "ex": "Go into the house — Войди в дом" },
+      { "text": "a" },
+      { "text": "monster", "ru": "монстр", "ex": "Scary monster — Страшный монстр" },
+      { "text": ": 1x1x1x1." }
+    ],
+    [
+      { "text": "1x1x1x1" },
+      { "text": "only", "ru": "только", "ex": "Only pain — Только боль" },
+      { "text": "feels", "ru": "чувствует", "ex": "I feel pain — Я чувствую боль" },
+      { "text": "pain", "ru": "боль", "ex": "No pain, no gain — Без боли нет победы" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "only", "ru": "только", "ex": "Only hate — Только ненависть" },
+      { "text": "feels", "ru": "чувствует", "ex": "I feel fear — Я чувствую страх" },
+      { "text": "hate", "ru": "ненависть", "ex": "Eyes full of hate — Глаза полные ненависти" },
+      { "text": "." }
+    ],
+    [
+      { "text": "He" },
+      { "text": "killed", "ru": "убивал", "ex": "He killed many — Он убил многих" },
+      { "text": "people", "ru": "люди", "ex": "Many people — Много людей" },
+      { "text": "even", "ru": "даже", "ex": "Even now — Даже сейчас" },
+      { "text": "before", "ru": "до, перед", "ex": "Before the game — Перед игрой" },
+      { "text": "The Spectre" },
+      { "text": "took", "ru": "взял, забрал", "ex": "He took the book — Он взял книгу" },
+      { "text": "him", "ru": "его, ему", "ex": "I see him — Я вижу его" },
+      { "text": "." }
+    ]
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "noli",
+  "title": "Noli",
+  "icon": "👁️",
+  "paragraphs": [
+    [
+      { "text": "Noli is" },
+      { "text": "very", "ru": "очень", "ex": "Very scary — Очень страшный" },
+      { "text": "old", "ru": "древний", "ex": "Ancient times — Древние времена" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "wants", "ru": "хочет", "ex": "I want food — Я хочу еды" },
+      { "text": "fame", "ru": "слава, известность", "ex": "Fame and glory — Слава и почёт" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "wants", "ru": "хочет", "ex": "I want food — Я хочу еды" },
+      { "text": "entertainment", "ru": "развлечение", "ex": "For entertainment — Для развлечения" },
+      { "text": "." }
+    ],
+    [
+      { "text": "Other", "ru": "Другие", "ex": "Other people — Другие люди" },
+      { "text": "killers", "ru": "убийцы", "ex": "The killer is here — Убийца здесь" },
+      { "text": "were forced", "ru": "были вынуждены", "ex": "I was forced to go — Меня заставили идти" },
+      { "text": "to" },
+      { "text": "kill", "ru": "убивать", "ex": "Don't kill — Не убивай" },
+      { "text": "." },
+      { "text": "But Noli is" },
+      { "text": "different", "ru": "другой, отличается", "ex": "This is different — Это другое" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "came", "ru": "пришёл", "ex": "He came here — Он пришёл сюда" },
+      { "text": "to The Spectre" },
+      { "text": "because", "ru": "потому что", "ex": "Because I can — Потому что я могу" },
+      { "text": "he" },
+      { "text": "wanted", "ru": "хотел", "ex": "I wanted to play — Я хотел играть" },
+      { "text": "to." }
+    ],
+    [
+      { "text": "He" },
+      { "text": "enjoys", "ru": "наслаждается", "ex": "I enjoy games — Я наслаждаюсь играми" },
+      { "text": "hunting", "ru": "охота", "ex": "The hunt begins — Охота начинается" },
+      { "text": "survivors", "ru": "выжившие", "ex": "The survivors ran — Выжившие убежали" },
+      { "text": "." }
+    ]
+  ]
+}

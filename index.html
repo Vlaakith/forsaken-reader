@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsaken Lore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a1a 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e0e0e0;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff3333;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+
+        /* Навигация по историям */
+        .story-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .story-nav button {
+            background: rgba(40, 40, 50, 0.9);
+            border: 1px solid #444;
+            color: #ccc;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.2s;
+        }
+
+        .story-nav button:hover {
+            background: rgba(60, 60, 70, 0.9);
+            border-color: #666;
+        }
+
+        .story-nav button.active {
+            background: rgba(80, 30, 30, 0.9);
+            border-color: #ff6666;
+            color: #ff6666;
+        }
+
+        .story {
+            background: rgba(20, 20, 25, 0.9);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
+        }
+
+        .story h2 {
+            color: #ff6666;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .story p {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        /* Интерактивные слова */
+        .word {
+            color: #66ccff;
+            cursor: pointer;
+            border-bottom: 1px dotted #66ccff;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .word:hover {
+            color: #99ddff;
+            background: rgba(100, 200, 255, 0.1);
+        }
+
+        .word.learned {
+            color: #66ff66;
+            border-color: #66ff66;
+        }
+
+        .plain {
+            /* обычный текст без перевода */
+        }
+
+        /* Tooltip с переводом */
+        .tooltip {
+            position: fixed;
+            background: #222;
+            border: 2px solid #ff6666;
+            border-radius: 8px;
+            padding: 15px 20px;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        .tooltip .russian {
+            color: #ffcc00;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tooltip .example {
+            color: #aaa;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .tooltip .close {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: #666;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .tooltip .close:hover {
+            color: #fff;
+        }
+
+        /* Счётчик слов */
+        .stats {
+            text-align: center;
+            padding: 15px;
+            background: rgba(50, 50, 60, 0.5);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stats span {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        /* Инструкция */
+        .instructions {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px dashed #444;
+            border-radius: 5px;
+        }
+
+        .instructions em {
+            color: #66ccff;
+            font-style: normal;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FORSAKEN</h1>
+        <p class="subtitle">Learn English through the dark lore</p>
+
+        <div class="instructions">
+            Tap on <em>blue words</em> to see Russian translation
+        </div>
+
+        <div class="stats">
+            Words learned: <span id="wordCount">0</span> / <span id="totalWords">0</span>
+        </div>
+
+        <nav class="story-nav" id="storyNav">
+            <!-- кнопки историй появятся тут -->
+        </nav>
+
+        <div id="storyContainer">
+            <div class="loading">Loading stories...</div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+        <span class="close" onclick="hideTooltip()">✕</span>
+        <div class="russian" id="tooltipRu"></div>
+        <div class="example" id="tooltipEx"></div>
+    </div>
+
+    <script>
+        // Список файлов историй
+        const storyFiles = [
+            'stories/01-spectre.json',
+            'stories/02-coolkidd.json',
+            'stories/03-noli.json',
+            'stories/04-elliot.json',
+            'stories/05-shedletsky.json'
+        ];
+
+        let stories = [];
+        let learnedWords = new Set();
+        let currentStoryIndex = 0;
+
+        const tooltip = document.getElementById('tooltip');
+        const tooltipRu = document.getElementById('tooltipRu');
+        const tooltipEx = document.getElementById('tooltipEx');
+        const wordCountEl = document.getElementById('wordCount');
+        const totalWordsEl = document.getElementById('totalWords');
+        const storyNav = document.getElementById('storyNav');
+        const storyContainer = document.getElementById('storyContainer');
+
+        // Загружаем прогресс
+        const saved = localStorage.getItem('forsaken-words');
+        if (saved) {
+            learnedWords = new Set(JSON.parse(saved));
+        }
+
+        // Загружаем все истории
+        async function loadStories() {
+            try {
+                const promises = storyFiles.map(file =>
+                    fetch(file).then(r => r.json())
+                );
+                stories = await Promise.all(promises);
+
+                renderNav();
+                renderStory(0);
+                updateStats();
+            } catch (error) {
+                storyContainer.innerHTML = `
+                    <div class="story">
+                        <p>Error loading stories. Make sure you're running this from a web server, not as a local file.</p>
+                        <p style="color: #666; font-size: 0.9em;">Tip: Use "python -m http.server 8000" in the project folder</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Рендерим навигацию
+        function renderNav() {
+            storyNav.innerHTML = stories.map((story, i) => `
+                <button onclick="showStory(${i})" class="${i === 0 ? 'active' : ''}" data-index="${i}">
+                    ${story.icon} ${story.title}
+                </button>
+            `).join('');
+        }
+
+        // Показываем историю
+        function showStory(index) {
+            currentStoryIndex = index;
+
+            // Обновляем активную кнопку
+            document.querySelectorAll('.story-nav button').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            renderStory(index);
+        }
+
+        // Рендерим историю
+        function renderStory(index) {
+            const story = stories[index];
+
+            let html = `<div class="story"><h2>${story.icon} ${story.title}</h2>`;
+
+            for (const paragraph of story.paragraphs) {
+                html += '<p>';
+                for (const word of paragraph) {
+                    if (word.ru) {
+                        const isLearned = learnedWords.has(word.text.toLowerCase());
+                        html += `<span class="word ${isLearned ? 'learned' : ''}"
+                                      data-ru="${word.ru}"
+                                      data-ex="${word.ex || ''}">${word.text}</span> `;
+                    } else {
+                        html += `<span class="plain">${word.text}</span> `;
+                    }
+                }
+                html += '</p>';
+            }
+
+            html += '</div>';
+            storyContainer.innerHTML = html;
+
+            // Добавляем обработчики
+            attachWordHandlers();
+            updateStats();
+        }
+
+        // Обработчики кликов на слова
+        function attachWordHandlers() {
+            document.querySelectorAll('.word').forEach(wordEl => {
+                wordEl.addEventListener('click', function(e) {
+                    const ru = this.dataset.ru;
+                    const ex = this.dataset.ex;
+                    const wordText = this.textContent.toLowerCase();
+
+                    tooltipRu.textContent = ru;
+                    tooltipEx.textContent = ex;
+
+                    const rect = this.getBoundingClientRect();
+                    let top = rect.bottom + 10;
+                    let left = rect.left;
+
+                    if (left + 300 > window.innerWidth) {
+                        left = window.innerWidth - 310;
+                    }
+                    if (top + 100 > window.innerHeight) {
+                        top = rect.top - 100;
+                    }
+
+                    tooltip.style.top = top + 'px';
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.display = 'block';
+
+                    if (!learnedWords.has(wordText)) {
+                        learnedWords.add(wordText);
+                        this.classList.add('learned');
+                        localStorage.setItem('forsaken-words', JSON.stringify([...learnedWords]));
+                        updateStats();
+                    }
+
+                    e.stopPropagation();
+                });
+            });
+        }
+
+        // Обновляем статистику
+        function updateStats() {
+            // Считаем все уникальные слова во всех историях
+            const allWords = new Set();
+            for (const story of stories) {
+                for (const para of story.paragraphs) {
+                    for (const word of para) {
+                        if (word.ru) {
+                            allWords.add(word.text.toLowerCase());
+                        }
+                    }
+                }
+            }
+
+            totalWordsEl.textContent = allWords.size;
+            wordCountEl.textContent = [...learnedWords].filter(w => allWords.has(w)).length;
+        }
+
+        function hideTooltip() {
+            tooltip.style.display = 'none';
+        }
+
+        document.addEventListener('click', hideTooltip);
+
+        // Запуск
+        loadStories();
+    </script>
+</body>
+</html>
