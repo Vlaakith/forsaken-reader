@@ -1,0 +1,76 @@
+{
+  "id": "guests",
+  "title": "The Forgotten Guests",
+  "icon": "👤",
+  "paragraphs": [
+    [
+      { "text": "Long", "ru": "давно", "ex": "Long ago — Давным-давно" },
+      { "text": "ago", "ru": "назад", "ex": "Years ago — Годы назад" },
+      { "text": "," },
+      { "text": "Roblox" },
+      { "text": "had", "ru": "имел", "ex": "Roblox had guests — В Роблоксе были гости" },
+      { "text": "Guests", "ru": "гости", "ex": "Welcome, guests! — Добро пожаловать, гости!" },
+      { "text": "." },
+      { "text": "They" },
+      { "text": "could", "ru": "могли", "ex": "They could play — Они могли играть" },
+      { "text": "play" },
+      { "text": "without", "ru": "без", "ex": "Without a name — Без имени" },
+      { "text": "an" },
+      { "text": "account", "ru": "аккаунт", "ex": "Create an account — Создать аккаунт" },
+      { "text": "." }
+    ],
+    [
+      { "text": "Guests" },
+      { "text": "had no" },
+      { "text": "names", "ru": "имена", "ex": "Remember their names — Помни их имена" },
+      { "text": "." },
+      { "text": "They" },
+      { "text": "could not", "ru": "не могли", "ex": "They could not talk — Они не могли говорить" },
+      { "text": "talk", "ru": "говорить", "ex": "Talk to me — Поговори со мной" },
+      { "text": "." },
+      { "text": "They were" },
+      { "text": "silent", "ru": "молчаливые", "ex": "Silent night — Тихая ночь" },
+      { "text": "shadows", "ru": "тени", "ex": "Dancing shadows — Танцующие тени" },
+      { "text": "." }
+    ],
+    [
+      { "text": "In 2017" },
+      { "text": "," },
+      { "text": "Roblox" },
+      { "text": "removed", "ru": "удалил", "ex": "I removed the file — Я удалил файл" },
+      { "text": "them", "ru": "их", "ex": "I see them — Я вижу их" },
+      { "text": "." },
+      { "text": "Millions", "ru": "миллионы", "ex": "Millions of stars — Миллионы звёзд" },
+      { "text": "of Guests" },
+      { "text": "disappeared", "ru": "исчезли", "ex": "The cat disappeared — Кот исчез" },
+      { "text": "forever", "ru": "навсегда", "ex": "Gone forever — Ушёл навсегда" },
+      { "text": "." }
+    ],
+    [
+      { "text": "Some", "ru": "некоторые", "ex": "Some people say — Некоторые говорят" },
+      { "text": "say" },
+      { "text": "the Guests" },
+      { "text": "never", "ru": "никогда", "ex": "Never give up — Никогда не сдавайся" },
+      { "text": "really", "ru": "на самом деле", "ex": "Is it really true? — Это правда?" },
+      { "text": "left", "ru": "ушли", "ex": "They left the room — Они покинули комнату" },
+      { "text": "." },
+      { "text": "They" },
+      { "text": "still", "ru": "всё ещё", "ex": "Still waiting — Всё ещё жду" },
+      { "text": "wander", "ru": "бродят", "ex": "Wander in the dark — Бродить в темноте" },
+      { "text": "in old games." }
+    ],
+    [
+      { "text": "If you see a" },
+      { "text": "player", "ru": "игрок", "ex": "A new player — Новый игрок" },
+      { "text": "with no name" },
+      { "text": "..." },
+      { "text": "maybe", "ru": "может быть", "ex": "Maybe tomorrow — Может быть завтра" },
+      { "text": "it's a Guest" },
+      { "text": "," },
+      { "text": "looking", "ru": "ищущий", "ex": "Looking for friends — Ищущий друзей" },
+      { "text": "for a" },
+      { "text": "friend", "ru": "друг", "ex": "My best friend — Мой лучший друг" },
+      { "text": "." }
+    ]
+  ]
+}

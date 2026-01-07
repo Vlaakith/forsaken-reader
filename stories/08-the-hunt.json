@@ -1,0 +1,79 @@
+{
+  "id": "the-hunt",
+  "title": "Noli's Hunt",
+  "icon": "🏹",
+  "paragraphs": [
+    [
+      { "text": "Noli is" },
+      { "text": "ancient", "ru": "древний", "ex": "Ancient temple — Древний храм" },
+      { "text": "." },
+      { "text": "He has" },
+      { "text": "lived", "ru": "жил", "ex": "I lived here — Я жил тут" },
+      { "text": "for" },
+      { "text": "thousands", "ru": "тысячи", "ex": "Thousands of years — Тысячи лет" },
+      { "text": "of years." },
+      { "text": "He has" },
+      { "text": "seen", "ru": "видел", "ex": "I have seen it — Я это видел" },
+      { "text": "everything", "ru": "всё", "ex": "He knows everything — Он знает всё" },
+      { "text": "." }
+    ],
+    [
+      { "text": "But" },
+      { "text": "nothing", "ru": "ничто", "ex": "Nothing is free — Ничто не бесплатно" },
+      { "text": "excites", "ru": "волнует", "ex": "This excites me — Это меня волнует" },
+      { "text": "him anymore." },
+      { "text": "Except", "ru": "кроме", "ex": "Except for one thing — Кроме одной вещи" },
+      { "text": "one thing:" },
+      { "text": "the" },
+      { "text": "hunt", "ru": "охота", "ex": "The hunt begins — Охота начинается" },
+      { "text": "." }
+    ],
+    [
+      { "text": "When" },
+      { "text": "The Spectre" },
+      { "text": "starts", "ru": "начинает", "ex": "The game starts — Игра начинается" },
+      { "text": "a new game" },
+      { "text": "," },
+      { "text": "Noli" },
+      { "text": "smiles", "ru": "улыбается", "ex": "She smiles at me — Она мне улыбается" },
+      { "text": "." },
+      { "text": "Fresh", "ru": "свежий, новый", "ex": "Fresh air — Свежий воздух" },
+      { "text": "prey", "ru": "добыча", "ex": "The prey runs — Добыча убегает" },
+      { "text": "." }
+    ],
+    [
+      { "text": "He" },
+      { "text": "moves", "ru": "двигается", "ex": "He moves fast — Он двигается быстро" },
+      { "text": "slowly", "ru": "медленно", "ex": "Walk slowly — Иди медленно" },
+      { "text": "." },
+      { "text": "He" },
+      { "text": "enjoys", "ru": "наслаждается", "ex": "I enjoy games — Я наслаждаюсь играми" },
+      { "text": "the" },
+      { "text": "fear", "ru": "страх", "ex": "Eyes full of fear — Глаза полные страха" },
+      { "text": "in their" },
+      { "text": "eyes", "ru": "глаза", "ex": "Close your eyes — Закрой глаза" },
+      { "text": "." },
+      { "text": "Running", "ru": "бег", "ex": "Running is useless — Бежать бесполезно" },
+      { "text": "only", "ru": "только", "ex": "Only makes it worse — Только хуже делает" },
+      { "text": "makes", "ru": "делает", "ex": "It makes me happy — Это делает меня счастливым" },
+      { "text": "it" },
+      { "text": "more", "ru": "больше", "ex": "More fun — Больше веселья" },
+      { "text": "fun", "ru": "весело", "ex": "It's fun — Это весело" },
+      { "text": "." }
+    ],
+    [
+      { "text": "Noli" },
+      { "text": "chose", "ru": "выбрал", "ex": "I chose this path — Я выбрал этот путь" },
+      { "text": "to" },
+      { "text": "serve", "ru": "служить", "ex": "Serve the king — Служить королю" },
+      { "text": "The Spectre." },
+      { "text": "Not" },
+      { "text": "because", "ru": "потому что", "ex": "Because I want to — Потому что я хочу" },
+      { "text": "he had to." },
+      { "text": "Because", "ru": "потому что", "ex": "Because it's fun — Потому что это весело" },
+      { "text": "he" },
+      { "text": "wanted", "ru": "хотел", "ex": "I wanted this — Я хотел этого" },
+      { "text": "to." }
+    ]
+  ]
+}
