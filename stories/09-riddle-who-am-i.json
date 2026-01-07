@@ -1,0 +1,79 @@
+{
+  "id": "riddle-1",
+  "title": "Riddle: Who Am I?",
+  "icon": "❓",
+  "paragraphs": [
+    [
+      { "text": "I am" },
+      { "text": "young", "ru": "молодой", "ex": "A young boy — Молодой мальчик" },
+      { "text": "." },
+      { "text": "Very", "ru": "очень", "ex": "Very fast — Очень быстрый" },
+      { "text": "young", "ru": "молодой", "ex": "Too young — Слишком молодой" },
+      { "text": "." },
+      { "text": "But" },
+      { "text": "everyone", "ru": "все", "ex": "Everyone knows — Все знают" },
+      { "text": "fears", "ru": "боится", "ex": "She fears the dark — Она боится темноты" },
+      { "text": "me." }
+    ],
+    [
+      { "text": "I" },
+      { "text": "didn't", "ru": "не (прошлое)", "ex": "I didn't know — Я не знал" },
+      { "text": "have", "ru": "иметь", "ex": "I have a family — У меня есть семья" },
+      { "text": "a" },
+      { "text": "family", "ru": "семья", "ex": "My family is big — Моя семья большая" },
+      { "text": "." },
+      { "text": "But" },
+      { "text": "someone", "ru": "кто-то", "ex": "Someone helped me — Кто-то помог мне" },
+      { "text": "found", "ru": "нашёл", "ex": "He found a key — Он нашёл ключ" },
+      { "text": "me and" },
+      { "text": "gave", "ru": "дал", "ex": "She gave me hope — Она дала мне надежду" },
+      { "text": "me a" },
+      { "text": "home", "ru": "дом", "ex": "Welcome home — Добро пожаловать домой" },
+      { "text": "." }
+    ],
+    [
+      { "text": "I" },
+      { "text": "received", "ru": "получил", "ex": "I received a gift — Я получил подарок" },
+      { "text": "a" },
+      { "text": "powerful", "ru": "мощный", "ex": "A powerful tool — Мощный инструмент" },
+      { "text": "gift", "ru": "подарок", "ex": "The best gift — Лучший подарок" },
+      { "text": "." },
+      { "text": "It" },
+      { "text": "lets", "ru": "позволяет", "ex": "It lets me fly — Это позволяет мне летать" },
+      { "text": "me" },
+      { "text": "control", "ru": "контролировать", "ex": "Control everything — Контролировать всё" },
+      { "text": "games", "ru": "игры", "ex": "Video games — Видеоигры" },
+      { "text": "." }
+    ],
+    [
+      { "text": "My" },
+      { "text": "skin", "ru": "кожа", "ex": "Soft skin — Мягкая кожа" },
+      { "text": "is not" },
+      { "text": "normal", "ru": "нормальный", "ex": "Not normal — Ненормальный" },
+      { "text": "." },
+      { "text": "It has a" },
+      { "text": "strange", "ru": "странный", "ex": "Strange color — Странный цвет" },
+      { "text": "color", "ru": "цвет", "ex": "What color? — Какой цвет?" },
+      { "text": "." },
+      { "text": "The color of" },
+      { "text": "blood", "ru": "кровь", "ex": "Red as blood — Красный как кровь" },
+      { "text": "." }
+    ],
+    [
+      { "text": "A" },
+      { "text": "pizza", "ru": "пицца", "ex": "I like pizza — Я люблю пиццу" },
+      { "text": "man" },
+      { "text": "wants", "ru": "хочет", "ex": "He wants revenge — Он хочет мести" },
+      { "text": "to" },
+      { "text": "destroy", "ru": "уничтожить", "ex": "Destroy the enemy — Уничтожить врага" },
+      { "text": "me." },
+      { "text": "I" },
+      { "text": "don't", "ru": "не", "ex": "I don't care — Мне всё равно" },
+      { "text": "care", "ru": "заботиться, волноваться", "ex": "I don't care — Мне всё равно" },
+      { "text": "." }
+    ],
+    [
+      { "text": "Who am I?" }
+    ]
+  ]
+}
