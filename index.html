@@ -41,6 +41,42 @@
             font-size: 0.9em;
         }
 
+        /* Переключатель New/Archive */
+        .mode-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mode-toggle button {
+            background: rgba(30, 30, 40, 0.9);
+            border: 1px solid #333;
+            color: #888;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .mode-toggle button:hover {
+            background: rgba(50, 50, 60, 0.9);
+            color: #ccc;
+        }
+
+        .mode-toggle button.active {
+            background: rgba(80, 30, 30, 0.9);
+            border-color: #ff6666;
+            color: #ff6666;
+        }
+
+        .mode-toggle button.archive-btn.active {
+            background: rgba(50, 50, 70, 0.9);
+            border-color: #8888ff;
+            color: #aaaaff;
+        }
+
         /* Навигация по историям */
         .story-nav {
             display: flex;
@@ -192,6 +228,16 @@
             padding: 50px;
             color: #666;
         }
+
+        /* Archive mode styling */
+        body.archive-mode .story {
+            border-color: #444;
+            box-shadow: 0 0 30px rgba(100, 100, 255, 0.1);
+        }
+
+        body.archive-mode .story h2 {
+            color: #aaaaff;
+        }
     </style>
 </head>
 <body>
@@ -205,6 +251,11 @@
 
         <div class="stats">
             Words learned: <span id="wordCount">0</span> / <span id="totalWords">0</span>
+        </div>
+
+        <div class="mode-toggle">
+            <button id="newBtn" class="active" onclick="setMode('new')">New</button>
+            <button id="archiveBtn" class="archive-btn" onclick="setMode('archive')">Archive</button>
         </div>
 
         <nav class="story-nav" id="storyNav">
@@ -223,20 +274,26 @@
     </div>
 
     <script>
-        // Список файлов историй
-        const storyFiles = [
-            'stories/01-spectre.json',
-            'stories/02-coolkidd.json',
-            'stories/03-noli.json',
-            'stories/04-elliot.json',
-            'stories/05-shedletsky.json',
+        // Новые истории (сегодня)
+        const newStoryFiles = [
             'stories/06-007n7.json',
             'stories/07-guests.json',
             'stories/08-the-hunt.json',
             'stories/09-riddle-who-am-i.json'
         ];
 
-        let stories = [];
+        // Архив (вчера)
+        const archiveStoryFiles = [
+            'stories/01-spectre.json',
+            'stories/02-coolkidd.json',
+            'stories/03-noli.json',
+            'stories/04-elliot.json',
+            'stories/05-shedletsky.json'
+        ];
+
+        let newStories = [];
+        let archiveStories = [];
+        let currentMode = 'new'; // 'new' or 'archive'
         let learnedWords = new Set();
         let currentStoryIndex = 0;
 
@@ -247,6 +304,8 @@
         const totalWordsEl = document.getElementById('totalWords');
         const storyNav = document.getElementById('storyNav');
         const storyContainer = document.getElementById('storyContainer');
+        const newBtn = document.getElementById('newBtn');
+        const archiveBtn = document.getElementById('archiveBtn');
 
         // Загружаем прогресс
         const saved = localStorage.getItem('forsaken-words');
@@ -257,10 +316,15 @@
         // Загружаем все истории
         async function loadStories() {
             try {
-                const promises = storyFiles.map(file =>
+                const newPromises = newStoryFiles.map(file =>
                     fetch(file).then(r => r.json())
                 );
-                stories = await Promise.all(promises);
+                const archivePromises = archiveStoryFiles.map(file =>
+                    fetch(file).then(r => r.json())
+                );
+
+                newStories = await Promise.all(newPromises);
+                archiveStories = await Promise.all(archivePromises);
 
                 renderNav();
                 renderStory(0);
@@ -275,8 +339,28 @@
             }
         }
 
+        // Переключение режима
+        function setMode(mode) {
+            currentMode = mode;
+            currentStoryIndex = 0;
+
+            newBtn.classList.toggle('active', mode === 'new');
+            archiveBtn.classList.toggle('active', mode === 'archive');
+            document.body.classList.toggle('archive-mode', mode === 'archive');
+
+            renderNav();
+            renderStory(0);
+            updateStats();
+        }
+
+        // Получить текущие истории
+        function getCurrentStories() {
+            return currentMode === 'new' ? newStories : archiveStories;
+        }
+
         // Рендерим навигацию
         function renderNav() {
+            const stories = getCurrentStories();
             storyNav.innerHTML = stories.map((story, i) => `
                 <button onclick="showStory(${i})" class="${i === 0 ? 'active' : ''}" data-index="${i}">
                     ${story.icon} ${story.title}
@@ -298,6 +382,7 @@
 
         // Рендерим историю
         function renderStory(index) {
+            const stories = getCurrentStories();
             const story = stories[index];
 
             let html = `<div class="story"><h2>${story.icon} ${story.title}</h2>`;
@@ -322,7 +407,6 @@
 
             // Добавляем обработчики
             attachWordHandlers();
-            updateStats();
         }
 
         // Обработчики кликов на слова
@@ -363,9 +447,9 @@
             });
         }
 
-        // Обновляем статистику
+        // Обновляем статистику (только для текущего режима)
         function updateStats() {
-            // Считаем все уникальные слова во всех историях
+            const stories = getCurrentStories();
             const allWords = new Set();
             for (const story of stories) {
                 for (const para of story.paragraphs) {
