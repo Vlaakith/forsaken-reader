@@ -24,10 +24,10 @@
     ],
     [
       { "text": "2." },
-      { "text": "When c00lkidd attacked a game, the song \"Never Gonna Give You Up\" played." }
+      { "text": "When c00lkidd attacked a game, the song Never Gonna Give You Up played." }
     ],
     [
-      { "text": "👆", "ru": "FALSE! ✗", "ex": "The song was \"Spooky Scary Skeletons\", not a Rick Roll!" }
+      { "text": "👆", "ru": "FALSE! ✗", "ex": "The song was Spooky Scary Skeletons, not a Rick Roll!" }
     ],
     [
       { "text": "3." },
@@ -38,17 +38,17 @@
     ],
     [
       { "text": "4." },
-      { "text": "C00lkidd's hacking tool was called \"hackergui\"." }
+      { "text": "C00lkidd's hacking tool was called hackergui." }
     ],
     [
-      { "text": "👆", "ru": "FALSE! ✗", "ex": "It was called c00lgui — with zeros, not O's!" }
+      { "text": "👆", "ru": "FALSE! ✗", "ex": "It was called c00lgui — with zeros, not Os!" }
     ],
     [
       { "text": "5." },
       { "text": "C00lkidd thinks he is playing tag when he hunts survivors." }
     ],
     [
-      { "text": "👆", "ru": "TRUE! ✓", "ex": "The Spectre manipulates him. He says \"Tag! You're it!\"" }
+      { "text": "👆", "ru": "TRUE! ✓", "ex": "The Spectre manipulates him. He says: Tag! You are it!" }
     ],
     [
       { "text": "6." },
@@ -69,7 +69,7 @@
       { "text": "right", "ru": "правильно", "ex": "All right! — Всё правильно!" },
       { "text": "?" },
       { "text": "7/7 = C00lkidd" },
-      { "text": "expert!", "ru": "эксперт", "ex": "You're an expert — Ты эксперт" }
+      { "text": "expert!", "ru": "эксперт", "ex": "You are an expert — Ты эксперт" }
     ]
   ]
 }
