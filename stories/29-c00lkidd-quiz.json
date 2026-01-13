@@ -1,0 +1,125 @@
+{
+  "id": "c00lkidd-quiz",
+  "title": "C00lkidd Quiz: True or False?",
+  "icon": "🧠",
+  "paragraphs": [
+    [
+      { "text": "How well do you know" },
+      { "text": "c00lkidd?" },
+      { "text": "Read each" },
+      { "text": "statement", "ru": "утверждение", "ex": "True statement — Правдивое утверждение" },
+      { "text": "and say:" },
+      { "text": "TRUE", "ru": "правда" },
+      { "text": "or" },
+      { "text": "FALSE", "ru": "ложь" },
+      { "text": "out loud!" }
+    ],
+    [
+      { "text": "1." },
+      { "text": "C00lkidd was" },
+      { "text": "created", "ru": "создан", "ex": "Created by a player — Создан игроком" },
+      { "text": "by a player named" },
+      { "text": "007n7." }
+    ],
+    [
+      { "text": "Answer:", "ru": "ответ" },
+      { "text": "TRUE!", "ru": "правда!" },
+      { "text": "007n7 made the c00lkidd account in 2013." }
+    ],
+    [
+      { "text": "2." },
+      { "text": "When c00lkidd" },
+      { "text": "attacked", "ru": "атаковал", "ex": "He attacked games — Он атаковал игры" },
+      { "text": "a game, the song \"Never Gonna Give You Up\" played." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "FALSE!", "ru": "ложь!" },
+      { "text": "The song was" },
+      { "text": "\"Spooky Scary Skeletons\"", "ru": "«Страшные скелеты»" },
+      { "text": ", not a Rick Roll!" }
+    ],
+    [
+      { "text": "3." },
+      { "text": "In Forsaken" },
+      { "text": "lore", "ru": "лор", "ex": "The game lore — Лор игры" },
+      { "text": ", c00lkidd is 10 years old." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "TRUE!" },
+      { "text": "He is the only" },
+      { "text": "child", "ru": "ребёнок", "ex": "Child killer — Киллер-ребёнок" },
+      { "text": "killer in the game." }
+    ],
+    [
+      { "text": "4." },
+      { "text": "C00lkidd's tool was called" },
+      { "text": "\"hackergui\"." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "FALSE!" },
+      { "text": "It was called" },
+      { "text": "c00lgui", "ru": "кулгуи" },
+      { "text": "— with zeros, not O's!" }
+    ],
+    [
+      { "text": "5." },
+      { "text": "C00lkidd" },
+      { "text": "thinks", "ru": "думает", "ex": "He thinks he's playing — Он думает, что играет" },
+      { "text": "he is playing" },
+      { "text": "tag", "ru": "салки", "ex": "Play tag — Играть в салки" },
+      { "text": "when he hunts survivors." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "TRUE!" },
+      { "text": "The Spectre" },
+      { "text": "manipulates", "ru": "манипулирует", "ex": "Manipulates his mind — Манипулирует его разумом" },
+      { "text": "him." },
+      { "text": "He says \"Tag! You're it!\" when he" },
+      { "text": "catches", "ru": "ловит", "ex": "He catches you — Он тебя ловит" },
+      { "text": "someone." }
+    ],
+    [
+      { "text": "6." },
+      { "text": "C00lkidd has the" },
+      { "text": "highest", "ru": "самое высокое", "ex": "Highest health — Самое высокое здоровье" },
+      { "text": "health of all killers." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "FALSE!" },
+      { "text": "He has the" },
+      { "text": "lowest", "ru": "самое низкое", "ex": "Lowest health — Самое низкое здоровье" },
+      { "text": "health — only" },
+      { "text": "800 HP!", "ru": "800 очков здоровья" }
+    ],
+    [
+      { "text": "7." },
+      { "text": "When c00lkidd kills 007n7, he" },
+      { "text": "gently", "ru": "нежно", "ex": "Gently lays him down — Нежно кладёт его" },
+      { "text": "lays him on the ground." }
+    ],
+    [
+      { "text": "Answer:" },
+      { "text": "TRUE!" },
+      { "text": "007n7 is his" },
+      { "text": "father", "ru": "отец", "ex": "Adopted father — Приёмный отец" },
+      { "text": "in the lore." },
+      { "text": "C00lkidd" },
+      { "text": "doesn't throw him", "ru": "не бросает его" },
+      { "text": "like other" },
+      { "text": "victims.", "ru": "жертвы", "ex": "Other victims — Другие жертвы" }
+    ],
+    [
+      { "text": "How many did you get" },
+      { "text": "right", "ru": "правильно", "ex": "All right! — Всё правильно!" },
+      { "text": "?" },
+      { "text": "7/7 =" },
+      { "text": "C00lkidd" },
+      { "text": "expert!", "ru": "эксперт", "ex": "You're an expert — Ты эксперт" }
+    ]
+  ]
+}
