@@ -1,0 +1,45 @@
+{
+  "id": "find-1x1x1x1",
+  "title": "Find the Real 1x1x1x1",
+  "icon": "🔍",
+  "paragraphs": [
+    [
+      { "text": "Only ONE of these is the real 1x1x1x1." },
+      { "text": "Can you find it? Tap to check!" }
+    ],
+    [
+      { "text": "1X1X1X1", "ru": "Nope!", "ex": "These are CAPITAL X letters" },
+      { "text": "1x1x1x1", "ru": "Nope!", "ex": "Count again... only 7 characters" },
+      { "text": "1xlxlxl", "ru": "Nope!", "ex": "Those are lowercase L, not 1" },
+      { "text": "1x1x1x", "ru": "Nope!", "ex": "Missing the last 1" }
+    ],
+    [
+      { "text": "1x1x1x2", "ru": "Nope!", "ex": "Ends with 2, not 1" },
+      { "text": "lxlxlxl", "ru": "Nope!", "ex": "All L letters, no 1s at all" },
+      { "text": "1x1x1x1x", "ru": "Nope!", "ex": "Extra x at the end" },
+      { "text": "1x1x1xI", "ru": "Nope!", "ex": "Ends with capital I, not 1" }
+    ],
+    [
+      { "text": "1×1×1×1", "ru": "Nope!", "ex": "These are × multiplication signs" },
+      { "text": "1x1x1x1", "ru": "YES! ✓", "ex": "You found the real 1x1x1x1!" },
+      { "text": "1X1x1X1", "ru": "Nope!", "ex": "Mixed capital and lowercase X" },
+      { "text": "1xIxIx1", "ru": "Nope!", "ex": "Capital I instead of 1 in the middle" }
+    ],
+    [
+      { "text": "1x1x1xl", "ru": "Nope!", "ex": "Ends with lowercase L" },
+      { "text": "Ix1x1x1", "ru": "Nope!", "ex": "Starts with capital I" },
+      { "text": "0x0x0x0", "ru": "Nope!", "ex": "All zeros, no ones" },
+      { "text": "1x|x1x1", "ru": "Nope!", "ex": "That's a | pipe symbol" }
+    ],
+    [
+      { "text": "How hackers hide:" },
+      { "text": "They use" },
+      { "text": "similar-looking", "ru": "похожие", "ex": "Similar-looking characters — Похожие символы" },
+      { "text": "characters to" },
+      { "text": "trick", "ru": "обмануть", "ex": "Trick your eyes — Обмануть глаза" },
+      { "text": "you." },
+      { "text": "This is called" },
+      { "text": "homograph attack!", "ru": "омографическая атака", "ex": "A trick using similar letters — Трюк с похожими буквами" }
+    ]
+  ]
+}
