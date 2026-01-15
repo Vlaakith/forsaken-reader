@@ -9,7 +9,7 @@
     ],
     [
       { "text": "1X1X1X1", "ru": "Nope!", "ex": "These are CAPITAL X letters" },
-      { "text": "1x1x1x1", "ru": "Nope!", "ex": "Count again... only 7 characters" },
+      { "text": "1x1x1x1x1", "ru": "Nope!", "ex": "Too long — 9 characters" },
       { "text": "1xlxlxl", "ru": "Nope!", "ex": "Those are lowercase L, not 1" },
       { "text": "1x1x1x", "ru": "Nope!", "ex": "Missing the last 1" }
     ],
