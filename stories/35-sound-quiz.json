@@ -1,0 +1,46 @@
+{
+  "id": "sound-quiz",
+  "title": "Sound Quiz",
+  "icon": "🔊",
+  "paragraphs": [
+    [
+      { "text": "Can you" },
+      { "text": "recognize", "ru": "узнать", "ex": "Recognize the sound — Узнать звук" },
+      { "text": "these" },
+      { "text": "famous", "ru": "знаменитые", "ex": "Famous sounds — Знаменитые звуки" },
+      { "text": "game sounds?" },
+      { "text": "Tap the" },
+      { "text": "button", "ru": "кнопка", "ex": "Tap the button — Нажми на кнопку" },
+      { "text": "to" },
+      { "text": "listen,", "ru": "слушать", "ex": "Listen carefully — Слушай внимательно" },
+      { "text": "then tap again to see the" },
+      { "text": "answer!", "ru": "ответ", "ex": "The correct answer — Правильный ответ" }
+    ],
+    [
+      { "text": "1. What happens when you hear this?" }
+    ],
+    [
+      { "text": "🔊 Play", "audio": "sounds/oof.mp3", "ru": "You died in Roblox!", "ex": "The legendary OOF sound — when your character dies" }
+    ],
+    [
+      { "text": "2. What just happened to you?" }
+    ],
+    [
+      { "text": "🔊 Play", "audio": "sounds/minecraft-hurt.mp3", "ru": "You took damage in Minecraft!", "ex": "The classic hurt sound — ouch!" }
+    ],
+    [
+      { "text": "3. What should you do when you hear this?" }
+    ],
+    [
+      { "text": "🔊 Play", "audio": "sounds/creeper.mp3", "ru": "RUN! A creeper is about to explode!", "ex": "The creeper hiss — you have about 1.5 seconds to escape" }
+    ],
+    [
+      { "text": "How many did you get" },
+      { "text": "right?", "ru": "правильно", "ex": "Get it right — Угадать правильно" },
+      { "text": "These sounds are" },
+      { "text": "iconic", "ru": "культовые", "ex": "Iconic sounds — Культовые звуки" },
+      { "text": "— millions of players know them" },
+      { "text": "instantly!", "ru": "мгновенно", "ex": "Know instantly — Узнать мгновенно" }
+    ]
+  ]
+}

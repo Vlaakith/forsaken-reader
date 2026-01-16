@@ -153,6 +153,33 @@
             /* обычный текст без перевода */
         }
 
+        /* Аудио кнопки */
+        .audio-btn {
+            background: rgba(100, 50, 150, 0.3);
+            border: 1px solid #9966ff;
+            color: #cc99ff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: all 0.2s;
+            margin: 5px;
+        }
+
+        .audio-btn:hover {
+            background: rgba(150, 100, 200, 0.4);
+            transform: scale(1.05);
+        }
+
+        .audio-btn:active {
+            transform: scale(0.95);
+        }
+
+        .audio-btn.played {
+            border-color: #66ff66;
+            color: #99ff99;
+        }
+
         /* Tooltip с переводом */
         .tooltip {
             position: fixed;
@@ -276,9 +303,9 @@
     <script>
         // Новые истории (сегодня)
         const newStoryFiles = [
-            'stories/30-1x1x1x1.json',
-            'stories/31-gagarin.json',
-            'stories/32-find-1x1x1x1.json'
+            'stories/33-shedletsky-real.json',
+            'stories/34-dacha.json',
+            'stories/35-sound-quiz.json'
         ];
 
         // Архив (раньше)
@@ -311,7 +338,10 @@
             'stories/26-baba-yaga.json',
             'stories/27-tetris.json',
             'stories/28-c00lkidd.json',
-            'stories/29-c00lkidd-quiz.json'
+            'stories/29-c00lkidd-quiz.json',
+            'stories/30-1x1x1x1.json',
+            'stories/31-gagarin.json',
+            'stories/32-find-1x1x1x1.json'
         ];
 
         let newStories = [];
@@ -413,7 +443,13 @@
             for (const paragraph of story.paragraphs) {
                 html += '<p>';
                 for (const word of paragraph) {
-                    if (word.ru) {
+                    if (word.audio) {
+                        // Аудио кнопка
+                        html += `<button class="audio-btn"
+                                        data-audio="${word.audio}"
+                                        data-ru="${word.ru || ''}"
+                                        data-ex="${word.ex || ''}">${word.text || '🔊'}</button> `;
+                    } else if (word.ru) {
                         const isLearned = learnedWords.has(word.text.toLowerCase());
                         html += `<span class="word ${isLearned ? 'learned' : ''}"
                                       data-ru="${word.ru}"
@@ -430,6 +466,7 @@
 
             // Добавляем обработчики
             attachWordHandlers();
+            attachAudioHandlers();
         }
 
         // Обработчики кликов на слова
@@ -464,6 +501,49 @@
                         localStorage.setItem('forsaken-words', JSON.stringify([...learnedWords]));
                         updateStats();
                     }
+
+                    e.stopPropagation();
+                });
+            });
+        }
+
+        // Обработчики кликов на аудио кнопки
+        function attachAudioHandlers() {
+            document.querySelectorAll('.audio-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const audioSrc = this.dataset.audio;
+                    const ru = this.dataset.ru;
+                    const ex = this.dataset.ex;
+
+                    // Воспроизводим звук
+                    const audio = new Audio(audioSrc);
+                    audio.play().catch(err => {
+                        console.log('Audio play failed:', err);
+                    });
+
+                    // Показываем tooltip с ответом, если есть
+                    if (ru) {
+                        tooltipRu.textContent = ru;
+                        tooltipEx.textContent = ex;
+
+                        const rect = this.getBoundingClientRect();
+                        let top = rect.bottom + 10;
+                        let left = rect.left;
+
+                        if (left + 300 > window.innerWidth) {
+                            left = window.innerWidth - 310;
+                        }
+                        if (top + 100 > window.innerHeight) {
+                            top = rect.top - 100;
+                        }
+
+                        tooltip.style.top = top + 'px';
+                        tooltip.style.left = left + 'px';
+                        tooltip.style.display = 'block';
+                    }
+
+                    // Помечаем как прослушанное
+                    this.classList.add('played');
 
                     e.stopPropagation();
                 });
