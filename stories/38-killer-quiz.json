@@ -1,0 +1,125 @@
+{
+  "id": "killer-quiz",
+  "title": "Guess the Killer!",
+  "icon": "🔪",
+  "paragraphs": [
+    [
+      { "text": "I will" },
+      { "text": "describe", "ru": "описывать", "ex": "Describe an ability — Описать способность" },
+      { "text": "a killer's" },
+      { "text": "ability", "ru": "способность", "ex": "Special ability — Особая способность" },
+      { "text": "." },
+      { "text": "You" },
+      { "text": "guess", "ru": "угадай", "ex": "Guess the name — Угадай имя" },
+      { "text": "which killer it is!" },
+      { "text": "Say the name out loud," },
+      { "text": "then tap to check." }
+    ],
+    [
+      { "text": "1." },
+      { "text": "This killer eats" },
+      { "text": "fried chicken", "ru": "жареная курица", "ex": "Eat fried chicken — Есть жареную курицу" },
+      { "text": "to" },
+      { "text": "heal", "ru": "лечиться", "ex": "Heal yourself — Вылечить себя" },
+      { "text": "." }
+    ],
+    [
+      { "text": "👆", "ru": "SHEDLETSKY! ✓", "ex": "He has 56 charges of chicken and can reach 2490 HP!" }
+    ],
+    [
+      { "text": "2." },
+      { "text": "This killer can" },
+      { "text": "transform", "ru": "превращаться", "ex": "Transform into something — Превратиться во что-то" },
+      { "text": "into a" },
+      { "text": "bat", "ru": "летучая мышь", "ex": "A vampire bat — Летучая мышь вампира" },
+      { "text": "and fly." }
+    ],
+    [
+      { "text": "👆", "ru": "NOSFERATU! ✓", "ex": "He is a vampire! His ability is called Ascension." }
+    ],
+    [
+      { "text": "3." },
+      { "text": "This killer" },
+      { "text": "summons", "ru": "призывает", "ex": "Summon robots — Призвать роботов" },
+      { "text": "pizza" },
+      { "text": "delivery", "ru": "доставка", "ex": "Pizza delivery — Доставка пиццы" },
+      { "text": "robots" },
+      { "text": "that" },
+      { "text": "hunt", "ru": "охотятся", "ex": "Hunt survivors — Охотиться на выживших" },
+      { "text": "survivors." }
+    ],
+    [
+      { "text": "👆", "ru": "C00LKIDD! ✓", "ex": "The ability is called Pizza Delivery. The robots deal damage and burn!" }
+    ],
+    [
+      { "text": "4." },
+      { "text": "This killer can" },
+      { "text": "resurrect", "ru": "воскрешать", "ex": "Resurrect the dead — Воскрешать мёртвых" },
+      { "text": "killed players as" },
+      { "text": "zombie", "ru": "зомби", "ex": "Control zombies — Управлять зомби" },
+      { "text": "minions", "ru": "приспешники", "ex": "Zombie minions — Зомби-приспешники" },
+      { "text": "." }
+    ],
+    [
+      { "text": "👆", "ru": "1X1X1X1! ✓", "ex": "Rejuvenate the Rotten — you can control the zombies!" }
+    ],
+    [
+      { "text": "5." },
+      { "text": "This killer makes the" },
+      { "text": "screen", "ru": "экран", "ex": "Dark screen — Тёмный экран" },
+      { "text": "turn" },
+      { "text": "dark red", "ru": "тёмно-красным", "ex": "A red tint — Красный оттенок" },
+      { "text": "and lets out a" },
+      { "text": "terrifying", "ru": "ужасающий", "ex": "A terrifying roar — Ужасающий рёв" },
+      { "text": "roar", "ru": "рёв", "ex": "A loud roar — Громкий рёв" },
+      { "text": "." }
+    ],
+    [
+      { "text": "👆", "ru": "GUEST 666! ✓", "ex": "Blood Hunt! It also gives speed and shows all survivors." }
+    ],
+    [
+      { "text": "6." },
+      { "text": "This killer" },
+      { "text": "floats", "ru": "парит", "ex": "Float in the air — Парить в воздухе" },
+      { "text": "and makes" },
+      { "text": "no footstep sounds", "ru": "без звука шагов", "ex": "Silent movement — Бесшумное движение" },
+      { "text": "." }
+    ],
+    [
+      { "text": "👆", "ru": "NOSFERATU! ✓", "ex": "His passive ability is Levitation. Perfect for sneaking up!" }
+    ],
+    [
+      { "text": "7." },
+      { "text": "This killer" },
+      { "text": "leaves", "ru": "оставляет", "ex": "Leave a trail — Оставлять след" },
+      { "text": "a" },
+      { "text": "trail", "ru": "след", "ex": "A corruption trail — След коррупции" },
+      { "text": "of" },
+      { "text": "corruption", "ru": "порча", "ex": "Digital corruption — Цифровая порча" },
+      { "text": "that damages survivors who step on it." }
+    ],
+    [
+      { "text": "👆", "ru": "JOHN DOE! ✓", "ex": "His passive is Natural Malevolence. He corrupts the ground!" }
+    ],
+    [
+      { "text": "8." },
+      { "text": "This killer has an ability called" },
+      { "text": "404 Error", "ru": "Ошибка 404", "ex": "Error 404 — not found — Ошибка 404 — не найдено" },
+      { "text": "that" },
+      { "text": "reveals", "ru": "показывает", "ex": "Reveal positions — Показать позиции" },
+      { "text": "all survivor" },
+      { "text": "positions", "ru": "позиции", "ex": "Hidden positions — Скрытые позиции" },
+      { "text": "." }
+    ],
+    [
+      { "text": "👆", "ru": "JOHN DOE! ✓", "ex": "His corrupted arm shows everyone for 6 seconds!" }
+    ],
+    [
+      { "text": "How many did you get" },
+      { "text": "right", "ru": "правильно", "ex": "All right! — Всё правильно!" },
+      { "text": "?" },
+      { "text": "8/8 = Forsaken" },
+      { "text": "master!", "ru": "мастер", "ex": "A true master — Настоящий мастер" }
+    ]
+  ]
+}
